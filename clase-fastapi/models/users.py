@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import List
 
+# el que define modelos User, GetUsersResponse, etc.
 
 class User(BaseModel):
     id: int
@@ -13,6 +14,10 @@ class GetUsersResponse(BaseModel):
 
 
 class CreateUserResponse(BaseModel):
+    message: str
+
+
+class UpdateUserResponse(BaseModel):
     message: str
 
 
